@@ -87,6 +87,173 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/*----Mobile Style----*/
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+.tagline-section {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  padding: 30px 0;
+}
+
+.features .font-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;
+}
+
+.previous-projects {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.previous-projects h2 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+
+/*---About Page----*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+/*---FAQ Page----*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -169,11 +336,111 @@ textarea {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+}
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+    }
+
+    header .content-wrapper {
+        width:100%;
+        justify-content: space-between;
+    }
+
+    header nav {
+        width: 20%;
+    }
+
+    header nav ul {
+      justify-content: space-between;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    aside .content-wrapper {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+
+    aside .content-wrapper .newsletter,
+    aside .content-wrapper .form-input {
+      width: 40%;
+      margin: 0;
+    }
+
+    .features article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 50%;
+    }
+
+    .features .features-description {
+      width: 50%;
+    }
+
+    .previous-projects article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .previous-projects article div {
+      width: 49%
+    }
+
+    footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .contact {
+      margin-bottom:  0;
+    }
+
+    footer .copyright {
+      width: 100%;
+    }
+
+/*=====About page
+=======*/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+}
+
+
+
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
