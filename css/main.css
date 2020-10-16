@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: ##13262F;
+  color: #13262F;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -83,20 +83,81 @@ textarea {
   resize: vertical;
 }
 
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 25px 0;
+}
 
 header,
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 header {
   padding: 15px 0;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -108,12 +169,15 @@ header .content-wrapper {
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
-  height: 1px;
+  height: 3px;
   margin: 10px 0 20px 0;
 }
 
 header nav {
+  font-size: 1.125em;
+  font-weight: 700;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -127,13 +191,33 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #527158;
+}
+
 footer {
-  flex-direction: column;
+  flex-flow: column wrap;
+  text-align: center;
 }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 20px 0;
+  color: #202322;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 footer p {
@@ -141,20 +225,16 @@ footer p {
 }
 
 footer .contact {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0;
 }
 
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 footer .copyright {
   margin: 20px 0;
@@ -164,20 +244,63 @@ footer .copyright {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .tagline-section {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("../img/cowork.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+}
+
+.tagline-section h1 {
+  font-size: 2.25em;
+  color: white;
 }
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.form-description {}
+
+  aside .form {
+    margin-top: 30px;
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-flow: column wrap;
+  }
+
+  input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -185,10 +308,20 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  color: #202322;
 }
 
+
 .features h2 {
-  margin-bottom: 60px;
+  margin: 20px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
 }
 
 .features article {
@@ -196,26 +329,29 @@ aside {
   padding: 30px 0;
 }
 
-.features .font-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
-.features p {
+
+.features .features-description {
   margin: 0;
+  text-transform: capitalize;
 }
 
-.previous-projects {
+.about {
+  background-color: #527158;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
-.previous-projects h2 {
+.about h2 {
   width: 55%;
   margin: 20px 0;
+  color: white;
+}
+
+.about h3 {
+  color: white;
 }
 
 
@@ -339,11 +475,10 @@ aside {
 
 @media only screen and (min-width: 768px) {
 /*Tablet styles here*/
-}
 
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 header {
@@ -351,100 +486,143 @@ header {
   padding: 33px 0;
     }
 
-    header .content-wrapper {
-        width:100%;
-        justify-content: space-between;
-    }
-
-    header nav {
-        width: 20%;
-    }
-
-    header nav ul {
-      justify-content: space-between;
-    }
-
-    .header-divider {
-        display: none;
-    }
-
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-    }
-
-    aside .content-wrapper .newsletter,
-    aside .content-wrapper .form-input {
-      width: 40%;
-      margin: 0;
-    }
-
-    .features article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
-    }
-
-    .features .features-description {
-      width: 50%;
-    }
-
-    .previous-projects article {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .previous-projects article div {
-      width: 49%
-    }
-
-    footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    footer .contact {
-      margin-bottom:  0;
-    }
-
-    footer .copyright {
-      width: 100%;
-    }
-
-/*=====About page
-=======*/
-
-  .mission-content {
-    display: flex;
+header .content-wrapper {
+    width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
+}
 
+header nav {
+    width: 30%;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
+
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description
+aside .content-wrapper .form {
+  width: 35%;
+  margin: 0;
+}
+
+aside .form {
+  margin-top: 0;
+}
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+.features .features-description {
+  width: 50%;
+}
+
+.about figure {
+  width: 42%;
+}
+
+.about article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .bio {
+  padding: 0 50px;
+}
+
+footer .content-wrapper {
+  width: 65%;
+  margin: 45px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  margin: 20px 0;
+}
+
+footer .social-icons {
+  width: 12.5em;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+
+.mission-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+}
+}
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
 }
 
-
-
-
-
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+header figure{
+  margin: 0 25px;
 }
+
+header nav {
+  width: 20%;
+margin: 0 55px;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 50px 0;
+}
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .form {
+  align-items: flex-start;
+}
+
+.features h2 {
+    width: 70%;
+}
+
+.about figure {
+margin-inline-end: 40px;
+width: 35%;
+}
+
+.about article div {
+    width: 42%;
+}
+
+.about .content-wrapper {
+  justify-content: space-around;
+}
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -459,71 +637,61 @@ header {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+   @media print {
+     *,
+     *:before,
+     *:after {
+       background: transparent !important;
+       color: #000 !important;
+       /* Black prints faster */
+       box-shadow: none !important;
+       text-shadow: none !important;
+     }
+     a,
+     a:visited {
+       text-decoration: underline;
+     }
+     a[href]:after {
+       content: " (" attr(href) ")";
+     }
+     abbr[title]:after {
+       content: " (" attr(title) ")";
+     }
+     /*
+        * Don't show links that are fragment identifiers,
+        * or use the `javascript:` pseudo protocol
+        */
+     a[href^="#"]:after,
+     a[href^="javascript:"]:after {
+       content: "";
+     }
+     pre {
+       white-space: pre-wrap !important;
+     }
+     pre,
+     blockquote {
+       border: 1px solid #999;
+       page-break-inside: avoid;
+     }
+     /*
+        * Printing Tables:
+        * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+        */
+     thead {
+       display: table-header-group;
+     }
+     tr,
+     img {
+       page-break-inside: avoid;
+     }
+     p,
+     h2,
+     h3 {
+       orphans: 3;
+       widows: 3;
+     }
+     h2,
+     h3 {
+       page-break-after: avoid;
+     }
+   }
