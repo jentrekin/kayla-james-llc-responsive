@@ -135,6 +135,10 @@ p {
   line-height: 1.285;
 }
 
+img {
+	width: 100%;
+}
+
 figure {
   margin: 0;
 }
@@ -201,7 +205,7 @@ header nav ul li {
 header nav ul li a {
   padding: 0 10px;
   text-decoration: none;
-  color: #527158;
+  color: #B4ADA3;
 }
 
 footer {
@@ -251,10 +255,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../img/cowork.jpg");
+  background: url("../img/cowork.jpg")center no-repeat #333;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   min-height: 500px;
 }
 
@@ -308,6 +310,8 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: url("../img/post-it-edit.png")center no-repeat #333;
+  background-size: cover;
   color: #202322;
 }
 
@@ -322,6 +326,12 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+}
+
+.features i {
+	font-size: 4em;
+        margin-bottom: 10px;
+        color: #B4ADA3;
 }
 
 .features article {
@@ -354,6 +364,11 @@ input[type=button] {
   color: white;
 }
 
+.social-media i {
+	font-size: 3em;
+        margin-bottom: 10px;
+        color: #527158;
+}
 
 /*---About Page----*/
 
@@ -548,7 +563,6 @@ aside .form {
 
 footer .content-wrapper {
   width: 65%;
-  margin: 45px 0;
 }
 
 .footer-content {
