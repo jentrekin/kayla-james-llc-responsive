@@ -257,61 +257,21 @@ footer .copyright {
   flex-flow: row wrap;
   background: url("../img/cowork.jpg")center no-repeat #333;
   background-size: cover;
+
   min-height: 500px;
 }
 
 .tagline-section h1 {
   font-size: 2.25em;
-  color: white;
+  color: #527158;
 }
 
-aside {
-  background-color: #527158;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.form-description {}
-
-  aside .form {
-    margin-top: 30px;
-    display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-flow: column wrap;
-  }
-
-  input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  background: url("../img/post-it-edit.png")center no-repeat #333;
-  background-size: cover;
+  background-color: #527158;
   color: #202322;
 }
 
@@ -328,39 +288,47 @@ input[type=button] {
   text-align: center;
 }
 
+.features h3 {
+  margin: 30px 0;
+}
+
 .features i {
 	font-size: 4em;
-        margin-bottom: 10px;
+        margin: 25px 0;
         color: #B4ADA3;
 }
 
 .features article {
-  width: 63%;
-  padding: 30px 0;
+  width: 100%;
+  margin: 30px 0;
 }
 
 
-
-.features .features-description {
+.features .companies {
   margin: 0;
   text-transform: capitalize;
 }
 
-.about {
+.features .features-description {
+  line-height: 24px;
+  text-align: center;
+}
+
+aside {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
 }
 
-.about h2 {
+aside h2 {
   width: 55%;
   margin: 20px 0;
   color: white;
 }
 
-.about h3 {
+aside h3 {
   color: white;
 }
 
@@ -514,50 +482,37 @@ header nav ul {
   justify-content: space-between;
 }
 
+header nav ul li a {
+  padding: 0 20px;
+}
+
 .header-divider {
     display: none;
 }
 
-
-aside .content-wrapper {
-  margin: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-aside .content-wrapper .form-description
-aside .content-wrapper .form {
-  width: 35%;
-  margin: 0;
-}
-
-aside .form {
-  margin-top: 0;
-}
 
 .features article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  flex-basis: 50%;
+  flex-basis: 33.3%;
 }
 
 .features .features-description {
   width: 50%;
 }
 
-.about figure {
-  width: 42%;
-}
-
-.about article {
+aside .content-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 50px 0;
+  flex-basis: 50%;
 }
 
-.about .bio {
+
+aside .bio {
   padding: 0 50px;
 }
 
@@ -601,7 +556,6 @@ header figure{
 }
 
 header nav {
-  width: 20%;
 margin: 0 55px;
 }
 
@@ -610,28 +564,16 @@ margin: 0 55px;
   margin: 50px 0;
 }
 
-aside .content-wrapper {
-  justify-content: space-around;
-}
 
-aside .form {
-  align-items: flex-start;
-}
-
-.features h2 {
-    width: 70%;
-}
-
-.about figure {
-margin-inline-end: 40px;
+aside figure {
 width: 35%;
 }
 
-.about article div {
+aside article div {
     width: 42%;
 }
 
-.about .content-wrapper {
+aside .content-wrapper {
   justify-content: space-around;
 }
 
