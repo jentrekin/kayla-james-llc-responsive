@@ -261,7 +261,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../img/cowork.jpg")center no-repeat #333;
+  background: url("../img/cowork.png")center no-repeat #333;
   background-size: cover;
 
   min-height: 500px;
@@ -283,13 +283,13 @@ footer .copyright {
 
 
 .features h2 {
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   text-align: center;
 }
@@ -300,13 +300,12 @@ footer .copyright {
 
 .features i {
 	font-size: 4em;
-        margin: 25px 0;
+        margin: 15px 0;
         color: #B4ADA3;
 }
 
 .features article {
   width: 55%;
-  margin: 30px 0;
 }
 
 
@@ -324,23 +323,19 @@ footer .copyright {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-
+  flex-flow: row wrap;
 }
 
 
-.about .left-half {
-  background: url("../img/hand-n-hand.png") center center no-repeat;
-    background:cover;
+.about figure {
     width: 100%;
-    min-height: 400px;
 }
 
-.about h2 {
-  width: 55%;
+.about .about-content {
+  width: 100%;
   margin: 20px 0;
   color: white;
+  text-align: justify;
 }
 
 .about h3 {
@@ -475,8 +470,8 @@ footer .copyright {
 /*Tablet styles here*/
 
 .content-wrapper {
-  max-width: 640px;
-  margin: 50px 0;
+  max-width: 750px;
+  margin: 30px 0;
 }
 
 header {
@@ -485,12 +480,12 @@ header {
     }
 
 header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
 }
 
 header nav {
     width: 30%;
+    margin: 0 150px;
 }
 
 header nav ul {
@@ -505,6 +500,10 @@ header nav ul li a {
     display: none;
 }
 
+.tagline-section h1 {
+  font-size: 4em;
+}
+
 
 .features article {
   display: flex;
@@ -512,27 +511,48 @@ header nav ul li a {
   align-items: center;
   flex-flow: column wrap;
   flex-basis: 33.3%;
+  padding: 15px 0;
+}
+
+.features h2 {
+  font-size: 2em;
+}
+
+.features .features-items {
+  margin: 15px 0;
 }
 
 .features .features-description {
-  width: 50%;
+  width: 75%;
+  text-align: justify;
 }
 
-.about .content-wrapper {
+.features .features-description p {
+  font-size: 1em;
+}
+
+.about figure {
+  width: 60%;
+}
+
+.about article {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  margin: 50px 0;
-  flex-basis: 50%;
+  justify-content: space-between;
 }
 
-
-.about .right-half {
-  padding: 0 50px;
+.about .about-content {
+  width: 40%;
+  padding: 0 35px;
 }
 
 .about .content-wrapper {
-  width: 65%;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 40px 0;
 }
 
 .footer-content {
@@ -543,6 +563,7 @@ header nav ul li a {
 
 footer h2 {
   margin: 20px 0;
+  font-size: 2em;
 }
 
 
@@ -554,6 +575,9 @@ footer .copyright {
   width: 100%;
 }
 
+footer p {
+  font-size: 1.25em;
+}
 
 .mission-content {
 display: flex;
@@ -561,26 +585,33 @@ justify-content: space-between;
 align-items: center;
 padding-top: 20px;
 }
+
 }
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
-}
 
 header figure{
   margin: 0 25px;
 }
 
-header nav {
-margin: 0 55px;
-}
 
 .content-wrapper {
   max-width: 960px;
+  margin: 20px 0;
+}
+
+.features .content-wrapper {
   margin: 50px 0;
 }
 
+.about .content-wrapper {
+  max-width: none;
+}
 
+.about .about-content {
+  margin: 60px 0;
+}
 
 
 
